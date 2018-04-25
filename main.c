@@ -6,8 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+            //usage: main [writers] [readers]
 int main(int argc, char *argv[]){
  
+ int writers = atoi(argv[1]);
+ int readers = atoi(argv[2]);
+
+ printf("Writers %i, readers %i", writers, readers);
  return 0;
 }
